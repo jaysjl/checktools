@@ -1,0 +1,9 @@
+﻿IP,端口,数据库类型,库名,模式名,表名,列名,抽取总数,规则名称,规则描述,匹配率,采样
+192.168.48.204,3306,MySQL,mysql,dbscan_test_schema,users,id_card,10,id,身份证号,100.00%,110101199001011234; 110101199101012345; 110101199201013456; 110101199301014567; 110101199401015678
+192.168.48.204,3306,MySQL,mysql,dbscan_test_schema,users,phone,10,phone,手机号,100.00%,13800138000; 13900139001; 13912345678; 15812345678; 18612345678
+192.168.48.204,3306,MySQL,mysql,dbscan_test_schema,users,email,10,email,邮箱地址,100.00%,zhangsan@example.com; lisi@example.com; wangwu@example.com; zhaoliu@example.com; sunqi@example.com
+192.168.48.204,3306,MySQL,mysql,dbscan_test_schema,orders,phone,10,phone,手机号,100.00%,13800138000; 13800138000; 13900139001; 13900139001; 13912345678
+192.168.48.204,3306,MySQL,mysql,dbscan_test_schema,accounts,id_card,10,id,身份证号,100.00%,110101199001011234; 110101199101012345; 110101199201013456; 110101199301014567; 110101199401015678
+192.168.48.204,3306,MySQL,mysql,dbscan_test_schema,accounts,bank_card,10,bank_card,银行卡号,100.00%,6222024000001234567; 6226091234567890123; 6216210123456789012; 6216201234567890123; 6214101234567890123
+192.168.48.204,3306,MySQL,mysql,dbscan_test_schema,logs,phone,10,phone,手机号,100.00%,13800138000; 13900139001; 13912345678; 15812345678; 18612345678
+192.168.48.204,3306,MySQL,mysql,dbscan_test_schema,logs,email,10,email,邮箱地址,100.00%,zhangsan@example.com; lisi@example.com; wangwu@example.com; zhaoliu@example.com; sunqi@example.com

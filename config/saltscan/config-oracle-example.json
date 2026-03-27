@@ -1,0 +1,59 @@
+{
+    "jdbc": {
+        "type": "Oracle",
+        "url": "jdbc:oracle:thin:@192.168.48.204:1521:orcl",
+        "username": "system",
+        "password": "123456",
+        "ip": "192.168.48.204",
+        "port": 1521,
+        "database": "orcl"
+    },
+    "scan": {
+        "targets": [
+            {
+                "table": "TEST_SCHEMA.ENCODE_TEST_DATA",
+                "columns": [
+                    "IDCARD",
+                    "IDCARD_HEX",
+                    "IDCARD_BASE64"
+                ]
+            },
+            {
+                "table": "TEST_SCHEMA.PSEUDO_ENCRYPTION_TEST_DATA",
+                "columns": [
+                    "ADDRESS",
+                    "ADDRESS_HEX",
+                    "ADDRESS_BASE64",
+                    "ADDRESS_XOR_HEX",
+                    "ADDRESS_XOR_BASE64"
+                ]
+            },
+            {
+                "table": "TEST_SCHEMA.WEAK_ENCRYPTION_TEST_DATA",
+                "columns": [
+                    "NAME",
+                    "NAME_ENCRYPTED",
+                    "NAME_ENCRYPTED_HEX",
+                    "NAME_ENCRYPTED_BASE64"
+                ]
+            },
+            {
+                "table": "TEST_SCHEMA.STRONG_ENCRYPTION_TEST_DATA",
+                "columns": [
+                    "PHONE",
+                    "PHONE_ENCRYPTED",
+                    "PHONE_ENCRYPTED_HEX",
+                    "PHONE_ENCRYPTED_BASE64"
+                ]
+            }
+        ],
+        "limit": 3000,
+        "data_length_min": 16,
+        "data_length_interval_min": 16,
+        "data_variance_max": 1.0,
+        "data_repetition_count_max": 5
+    },
+    "output": {
+        "path": "./report/saltscan-report.html"
+    }
+}
