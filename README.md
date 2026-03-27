@@ -478,8 +478,3 @@ cd ../saltscan && mvn test
 ## 许可证
 
 本项目采用 GPL License，详见仓库根目录 `LICENSE`。
-
-## 联系方式
-
-- 项目主页：https://gitee.com/jay_sjl/checktools
-- 问题反馈：https://gitee.com/jay_sjl/checktools/issues
